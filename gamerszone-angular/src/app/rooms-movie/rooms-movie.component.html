@@ -1,0 +1,29 @@
+<div class="container">
+  <img src="../../assets/transformersBackground.jpg" alt="Fundo background jogos" class="imgBackground">
+
+  <div class="content">
+    <app-header></app-header>
+  
+    <div class="movie">
+      <div class="headerInformations">
+        <h1>{{ nameMovie }}</h1>
+        <button mat-raised-button (click)="openDialog()">Criar sala</button>
+      </div>
+
+      <div class="modal">
+        <h2>Salas encontradas</h2>
+
+        <div class="list" *ngFor="let room of rooms; let i = index">
+          <div class="item">
+            <h5>{{ room.name }}</h5>
+            <h5>{{ room.vacancies ? room.vacancies + ' vagas' : '-' }}</h5>
+            <h5>{{ room.timetable ? room.timetable : '-' }}</h5>
+            <a target="_blank" rel="noopener noreferrer" href={{room.urlCommunication}}>Entrar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <app-footer></app-footer>
+  </div>
+</div>

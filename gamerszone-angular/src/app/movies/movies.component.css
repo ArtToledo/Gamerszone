@@ -1,0 +1,100 @@
+.container {
+  background: transparent linear-gradient(119deg, #000000 0%, #240246 66%, #2B005E 100%, #430094 100%) 0% 0% no-repeat padding-box;;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+}
+
+.imgBackground {
+  position: absolute;
+  z-index: 5;
+  opacity: 0.10;
+  width: 100%;
+  height: 100%;
+}
+
+.container .content {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.container .content .container-movies .headerInformations {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.container .content .container-movies .headerInformations button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+
+  background: transparent linear-gradient(110deg, #FEA14A 0%, #FD6637 100%) 0% 0% no-repeat padding-box;
+  border: 0px;
+  border-radius: 4px;
+  
+  width: 120px;
+  height: 40px;
+  align-self: flex-end;
+  cursor: pointer;
+  padding: 0;
+}
+
+.container .support {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 80%; 
+  background: rgba(255, 255, 255, 0.080);
+  margin-bottom: 30px;
+}
+
+.card img {
+  height: 100%;
+  max-height: 150px;
+}
+
+.card .mat-card-actions {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card .mat-card-actions button {
+  height: 100%;
+  padding: 0 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+
+  background: transparent;
+  border: 1px solid #FD6637;
+  border-radius: 4px;
+  
+  
+  height: 100%;
+  min-height: 30px;
+  cursor: pointer;
+}
+
+.card .mat-card-actions button:hover {
+  background: transparent linear-gradient(110deg, #FEA14A 0%, #FD6637 100%) 0% 0% no-repeat padding-box;
+  border: 0;
+  border-radius: 4px;
+}
+
+@media (max-width: 480px) 
+{
+  .imgBackground {
+    display: none;
+  }
+}

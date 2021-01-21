@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>Solicitar criação de jogo</h2>
+<mat-dialog-content class="mat-typography">
+  <p>O tempo de criação varia entre 30~45 minutos, caso precise com urgência entre em contato através do número (31) 98580-0803, agradeçemos a compreensão.</p>
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width" style="width: 100%;">
+      <mat-label>Nome do jogo</mat-label>
+      <input matInput #message maxlength="30" placeholder="Ex: Grand Theft Auto V">
+      <mat-hint align="start"><strong>Preencha o nome completo</strong> </mat-hint>
+      <mat-hint align="end">{{message.value.length}} / 30</mat-hint>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button mat-dialog-close color="warn">Cancelar</button>
+  <button mat-raised-button [mat-dialog-close]="true" cdkFocusInitial color="primary">Confirmar</button>
+</mat-dialog-actions>

@@ -1,0 +1,26 @@
+<div class="container">
+  <img src="../../assets/coringaBackground.png" alt="Fundo background jogos" class="imgBackground">
+
+  <div class="content">
+    <app-header></app-header>
+  
+    <div class="container-movies">
+      <div class="headerInformations">
+        <button mat-raised-button (click)="openDialog()">Solicitar filme</button>
+      </div>
+
+      <mat-grid-list [cols]="breakpoint" rowHeight="200px" (window:resize)="onResize($event)">
+        <mat-grid-tile *ngFor="let movie of movies; let i = index">
+          <mat-card class="card">
+            <img mat-card-image src="http://localhost:3333/files/{{ movie.thumbnail }}" alt="{{ movie.name }}">
+            <mat-card-actions>
+              <button mat-button (click)="searchRooms(movie)">Encontrar sala</button>
+            </mat-card-actions>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    
+    <app-footer></app-footer>
+  </div>
+</div>

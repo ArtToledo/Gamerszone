@@ -1,0 +1,9 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font: 400 12px Roboto, sans-serif;
+}

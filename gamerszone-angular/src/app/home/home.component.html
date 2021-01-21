@@ -1,0 +1,51 @@
+<div class="container">
+  <img src="../../assets/backgroundHome.jpg" alt="Fundo background jogos" class="imgBackground">
+
+  <div class="content">
+    <app-header></app-header>
+  
+    <div class="informations">
+      <div class="informationsPlataform">
+        <h2>Bem vindo a</h2>
+        <h1>GamersZone</h1>
+        <p>Uma plataforma focada em conectar jogares dos mais variados jogos em salas do discord, teamspeak entre outros canais de comunicação.</p>
+        
+        <div class="buttons">
+          <div class="button">
+            <a [routerLink]="['/games']">Buscar</a>
+          </div>
+          
+          <div class="button">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/">Apoiar projeto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="informationsGamesAndPeoples">
+        <div class="modal">
+          <h2>Jogos do momento</h2>
+          <ul>
+            <li>Call of Duty Warzone</li>
+            <li>Fortnite</li>
+            <li>CS GO</li>
+            <li>League of Legends</li>
+            <li>Dota</li>
+            <li>Among US</li>
+          </ul>
+
+          <h2>Top apoiadores</h2>
+          <ul>
+            <li>Alanzoka</li>
+            <li>Gaulês</li>
+            <li>Zigueira</li>
+            <li>The Darkeness</li>
+            <li>Ninja</li>
+            <li>Flow Poadcast</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <app-footer></app-footer>
+  </div>
+</div>
